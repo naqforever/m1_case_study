@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function numberToWord(num){
+    switch (num){
+      case 1:
+        return "một";
+      case 2:
+        return "hai";
+      case 3:
+        return "ba";
+      case 4:
+        return "bốn";
+      case 5:
+        return "năm";
+      case 6:
+        return "sáu";
+      case 7:
+        return "bảy";
+      case 8:
+        return "tám";
+      case 9:
+        return "chín";
+      case 10:
+        return "mười";
+    }
+
+    return "không";
+  }
+
+  let result = "";
+  let numberInput = prompt("Enter your number");
+  numberInput.split("").forEach(e => {
+    result += numberToWord(Number(e)) + " ";
+  });
+
+  console.log(result);
+</script>
+</body>
+</html>
