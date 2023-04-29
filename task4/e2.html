@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const s = "cabca";
+  let a = s.split("");
+  let b = [];
+
+  for (let i = 0; i < a.length; i++) {
+    if(!b.includes(a[i])){
+      b.push(a[i]);
+    }
+  }
+
+  console.log(b.length);
+</script>
+</body>
+</html>

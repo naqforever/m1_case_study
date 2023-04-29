@@ -27,6 +27,10 @@
         table th:last-child {
             width: 10%;
         }
+
+        h1{
+            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +47,7 @@
         <td>Cafe</td>
         <td>5</td>
         <td>
-            <button>Add to cart</button>
+            <button onclick="addToCart('Cafe', 5, this)">Add to cart</button>
         </td>
     </tr>
     <tr>
@@ -51,7 +55,7 @@
         <td>Orange juice</td>
         <td>10</td>
         <td>
-            <button>Add to cart</button>
+            <button onclick="addToCart('Orange juice', 10, this)">Add to cart</button>
         </td>
     </tr>
     <tr>
@@ -59,7 +63,7 @@
         <td>Carrot juice</td>
         <td>15</td>
         <td>
-            <button>Add to cart</button>
+            <button onclick="addToCart('Carrot juice', 15, this)">Add to cart</button>
         </td>
     </tr>
     <tr>
@@ -67,7 +71,7 @@
         <td>Tomato juice</td>
         <td>20</td>
         <td>
-            <button>Add to cart</button>
+            <button onclick="addToCart('Tomato juice', 20, this)">Add to cart</button>
         </td>
     </tr>
     <tr>
@@ -75,7 +79,7 @@
         <td>Water</td>
         <td>25</td>
         <td>
-            <button onclick="addToCart()">Add to cart</button>
+            <button onclick="addToCart('Water', 25, this)">Add to cart</button>
         </td>
     </tr>
     <tr>
@@ -83,7 +87,7 @@
         <td>Coconut water</td>
         <td>30</td>
         <td>
-            <button>Add to cart</button>
+            <button onclick="addToCart('Coconut water', 30, this)">Add to cart</button>
         </td>
     </tr>
     </tbody>
@@ -92,11 +96,18 @@
 <h2>
 
 </h2>
-
+<h1></h1>
 <script>
-    const addToCart = () => {
-        
-        // document.querySelector("h2").innerHTML = "Result: "
+    let res = "";
+    let sum = 0;
+    const addToCart = (name, price, e) => {
+        const quantity = +prompt("Quantity")
+        let total = price * quantity;
+        sum += total;
+        res += `<br> ${quantity} ${name}: ${total}$`
+        document.querySelector("h2").innerHTML = res;
+        document.querySelector("h1").innerHTML = "Total: " + sum;
+        e.disabled = true;
     };
 
 
