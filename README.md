@@ -18,41 +18,41 @@
 
 # Bài 1: Vẽ tam giác vuông cân rỗng có chiều cao h. Ví dụ: h = 5 {#bài-1-vẽ-tam-giác-vuông-cân-rỗng-có-chiều-cao-h.-ví-dụ-h-5 .unnumbered}
 
-# \* {#section .unnumbered}
+# \* 
 
-# \* \* {#section-1 .unnumbered}
+# \* &nbsp; \* 
 
-# \* \* {#section-2 .unnumbered}
+# \*  &nbsp;&nbsp; &nbsp;  \* 
 
-# \* \* {#section-3 .unnumbered}
+# \*  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;   \* 
 
-# \* \* \* \* \* {#section-4 .unnumbered}
+# \* \* \* \* \* 
 
 # Bài 2: Vẽ tam giác cân đặc có chiều cao h do người dùng nhập vào. Ví dụ: h = 5 {#bài-2-vẽ-tam-giác-cân-đặc-có-chiều-cao-h-do-người-dùng-nhập-vào.-ví-dụ-h-5 .unnumbered}
 
-#   {#section-5 .unnumbered}
+#   
 
-#  \* {#section-6 .unnumbered}
+#  \* 
 
-#  \* \* \* {#section-7 .unnumbered}
+#  \* \* \* 
 
-#  \* \* \* \* \* {#section-8 .unnumbered}
+#  \* \* \* \* \* 
 
-#  \* \* \* \* \* \* \* {#section-9 .unnumbered}
+#  \* \* \* \* \* \* \* 
 
-# \* \* \* \* \* \* \* \* \* {#section-10 .unnumbered}
+# \* \* \* \* \* \* \* \* \* 
 
 # Bài 3: Vẽ tam giác cân rỗng có chiều cao h do người dùng nhập vào. Ví dụ: h = 5 {#bài-3-vẽ-tam-giác-cân-rỗng-có-chiều-cao-h-do-người-dùng-nhập-vào.-ví-dụ-h-5 .unnumbered}
 
-#  \* {#section-11 .unnumbered}
+#  \* 
 
-#  \* \* {#section-12 .unnumbered}
+#  \* \* 
 
-#  \* \* {#section-13 .unnumbered}
+#  \* \* 
 
-#  \* \* {#section-14 .unnumbered}
+#  \* \* 
 
-#  \* \* \* \* \* \* \* \* \* {#section-15 .unnumbered}
+#  \* \* \* \* \* \* \* \* \* 
 
 # Yêu cầu 3 (Mảng và Loop)
 
@@ -60,13 +60,13 @@
 
 # Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức: {#xây-dựng-mảng-b-là-prefix-sums-của-mảng-a-cụ-thể-theo-công-thức .unnumbered}
 
-#  b\[0\] = a\[0\] {#b0-a0 .unnumbered}
+#  b\[0\] = a\[0\] 
 
-#  b\[1\] = a\[0\] + a\[1\] {#b1-a0-a1 .unnumbered}
+#  b\[1\] = a\[0\] + a\[1\] 
 
-#  b\[2\] = a\[0\] + a\[1\] + a\[2\] {#b2-a0-a1-a2 .unnumbered}
+#  b\[2\] = a\[0\] + a\[1\] + a\[2\] 
 
-#  \... {#section-16 .unnumbered}
+#  \... 
 
 #  b\[n - 1\] = a\[0\] + a\[1\] + \... + a\[n - 1\] {#bn---1-a0-a1-...-an---1 .unnumbered}
 
@@ -92,7 +92,7 @@
 
 # Bài 4: Giả sử menu của chúng ta có các loại thức uống như sau: {#bài-4-giả-sử-menu-của-chúng-ta-có-các-loại-thức-uống-như-sau .unnumbered}
 
-# Cafe {#cafe .unnumbered}
+# Cafe 
 
 # Cam vắt {#cam-vắt .unnumbered}
 
@@ -172,7 +172,7 @@
 
 # 1. Đối với chức năng hiển thị học viên có trong danh sách sẽ được hiển thị dưới dạng bảng trên màn hình với giao diện tương tự dưới đây {#đối-với-chức-năng-hiển-thị-học-viên-có-trong-danh-sách-sẽ-được-hiển-thị-dưới-dạng-bảng-trên-màn-hình-với-giao-diện-tương-tự-dưới-đây .unnumbered}
 
-# ![](media/image1.png){width="6.5in" height="2.296527777777778in"} {#section-17 .unnumbered}
+# ![](media/image1.png){width="6.5in" height="2.296527777777778in"} 
 
 # 2. Khi click vào button thêm mới học viên chương trình sẽ hiển thị hộp thoại prompt() cho người dùng nhập thông tin của học viên. Sau khi người dùng nhập đầy đủ thông tin thì học viên sẽ được thêm vào danh sách. {#khi-click-vào-button-thêm-mới-học-viên-chương-trình-sẽ-hiển-thị-hộp-thoại-prompt-cho-người-dùng-nhập-thông-tin-của-học-viên.-sau-khi-người-dùng-nhập-đầy-đủ-thông-tin-thì-học-viên-sẽ-được-thêm-vào-danh-sách. .unnumbered}
 
@@ -200,12 +200,12 @@
 
 # Ngày sinh đúng định dạng dd/mm/yyyy ( ngày / tháng / năm )
 
-#  {#section-18 .unnumbered}
+#  
 
 # Yêu cầu 7.
 
 # Xây dựng giao diện như hình bên dưới: {#xây-dựng-giao-diện-như-hình-bên-dưới .unnumbered}
 
-# ![](media/image2.png){width="6.514488188976378in" height="2.960932852143482in"} {#section-19 .unnumbered}
+# ![](media/image2.png){width="6.514488188976378in" height="2.960932852143482in"} 
 
-#  {#section-20 .unnumbered}
+#  
