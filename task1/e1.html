@@ -6,27 +6,20 @@
 </head>
 <body>
 <script>
-    const x = 4, y = 5;
+  let result;
+  const salary = +prompt("Enter the salary");
 
-    for (let i = 0; i < x; i++) {
-        for (let j = 0; j < y; j++) {
-            if (i == 0 || i == x - 1) {
-                document.write("*")
-            }
-            else {
-                if(j==0 || j==y-1){
-                    document.write("*")
-                }
-                else {
-                    document.write('&nbsp;&nbsp;')
-                }
-            }
+  if(salary > 15000000){
+    result = salary* (1- (20/100));
+  }
+  else if(salary <15000000 && salary > 7000000){
+    result = salary* (1- (10/100));
+  }
+  else{
+    result = salary* (1- (5/100));
+  }
 
-
-        }
-
-        document.write("<br>");
-    }
+  alert("net salary: " + result);
 </script>
 </body>
 </html>
