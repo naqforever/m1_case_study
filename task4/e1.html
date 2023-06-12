@@ -9,35 +9,36 @@
     let s = "tRuong    TaN   HAI ";
 
     function normalForm(val) {
-        let a = s.toLowerCase().split("");
+        let a = val.toLowerCase().split("");
 
         for (let i = 0; i < a.length - 1; i++) {
-            if (a[i] == " " && a[i + 1] == " ") {
+            if (a[i] === " " && a[i + 1] === " ") {
                 a[i] = "";
             }
 
-            if (a[i] == " " && a[i + 1] != " ") {
+            if (a[i] === " " && a[i + 1] !== " ") {
                 a[i + 1] = a[i + 1].toUpperCase();
             }
 
-            if (i == 0 && a[i + 1] != " ") {
+            if (i === 0 && a[i + 1] !== " ") {
                 a[i] = a[i].toUpperCase();
             }
         }
 
-        console.log(`before normal form: ${s}`)
-        const res = a.join('');
-        console.log(`after normal form: ${res}` );
-        console.log(`longest string: ${findLongStr(res.split(" "))}`);
+        return a.join('');
     }
 
     function findLongStr(arr) {
-        let max = arr[0].length;
+        let max = arr[1].length;
         arr.map(item => max = Math.max(max, item.length));
-        return  arr.filter(item => item.length == max);
+        return  arr.filter(item => item.length === max);
     }
 
-    normalForm(s);
+    console.log(`before normal form: ${s}`)
+    s = normalForm(s);
+    console.log(`after normal form: ${s}` );
+
+    console.log(`longest string: ${findLongStr(s.split(" "))}`);
 </script>
 </body>
 </html>
