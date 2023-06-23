@@ -101,7 +101,7 @@
     let res = "";
     let sum = 0;
     const addToCart = (name, price, e) => {
-        const quantity = +prompt("Quantity")
+        const quantity = +prompt(`You order with ${name}\nPlease enter quantity`)
         let total = price * quantity;
         sum += total;
         res += `<br> ${quantity} ${name}: ${total}$`
@@ -109,8 +109,6 @@
         document.querySelector("h1").innerHTML = "Total: " + sum;
         e.disabled = true;
     };
-
-
 </script>
 </body>
 </html>

@@ -6,17 +6,21 @@
 </head>
 <body>
 <script>
-  const s = "cabca";
-  let a = s.split("");
-  let b = [];
+  function differentSymbolsNaive(val){
+      let a = val.split("");
+      let b = [];
 
-  for (let i = 0; i < a.length; i++) {
-    if(!b.includes(a[i])){
-      b.push(a[i]);
-    }
+      for (let i = 0; i < a.length; i++) {
+          if(!b.includes(a[i])){
+              b.push(a[i]);
+          }
+      }
+
+      return b;
   }
 
-  console.log(b.length);
+  const s = "cabca";
+  console.log(differentSymbolsNaive(s).length);
 </script>
 </body>
 </html>
