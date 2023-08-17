@@ -42,7 +42,7 @@
             padding-left: 100px;
         }
 
-        small{
+        small {
             color: red;
         }
     </style>
@@ -68,7 +68,8 @@
         <label for="email">Email</label><input id="email">
     </div>
     <div>
-        <label for="birthday">Birthday</label><input type="date" id="birthday">
+        <label for="birthday">Birthday</label>
+        <input type="text" id="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="dd/mm/yyyy">
         <small id="smBirthday" style="display: none">Birthday is invalid</small>
     </div>
     <div>
@@ -211,7 +212,7 @@
     }
 
     function saveStudent() {
-        if(validStudent()){
+        if (validStudent()) {
             const id = _id.value;
             const code_ = code.value;
             const name_ = _name.value;
@@ -235,18 +236,18 @@
         }
 
         console.log(_name.value.length);
-        if(_name.value.length === 0 || _name.value.length > 50){
+        if (_name.value.length === 0 || _name.value.length > 50) {
             smName.style.display = 'inline';
             return false;
         }
 
-        if(+module.value === 0 || +module.value > 6){
+        if (+module.value === 0 || +module.value > 6) {
             smModule.style.display = 'inline';
             return false;
         }
 
         const birthdate = new Date(birthday.value);
-        if(birthdate.toString() === 'Invalid Date' || birthday.value.includes('-')){
+        if (birthdate.toString() === 'Invalid Date') {
             smBirthday.style.display = 'inline';
             return false;
         }
@@ -262,6 +263,10 @@
         email.value = '';
         birthday.value = '';
         module.value = '';
+        smCode.style.display = 'none';
+        smName.style.display = 'none';
+        smBirthday.style.display = 'none';
+        smModule.style.display = 'none';
     }
 
     listAll();
